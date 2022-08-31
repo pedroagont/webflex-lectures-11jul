@@ -52,3 +52,35 @@ const variableFunction = function() {
 };
 
 const arrowFunction = () => console.log('Hello from arrow shorter! 🏹');
+
+////////////////////
+
+const welcomeUser = (username, callback) => {
+  callback(username);
+};
+
+const completeDataMessage = username => {
+  console.log(`Welcome ${username}! Your profile is complete!`);
+};
+
+const missingDataMessage = username => {
+  console.log(`Welcome ${username}! Your profile is missing some data!`);
+};
+
+welcomeUser('Sarah', completeDataMessage);
+welcomeUser('Ernie', missingDataMessage);
+
+// Higher order function
+const mathOperation = (val1, val2, callback) => {
+  return callback(val1, val2);
+};
+
+// Callbacks declaration
+const sum = (num1, num2) => num1 + num2;
+const minus = (num1, num2) => num1 - num2;
+const multiply = (num1, num2) => num1 * num2;
+const divide = (num1, num2) => num1 / num2;
+
+// Invoking
+const result = mathOperation(18, 15, divide);
+console.log(result);
