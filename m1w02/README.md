@@ -1,4 +1,4 @@
-# M1W02 - [ ] Callbacks!
+# M1W02 - Callbacks!
 
 ### To Do
 
